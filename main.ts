@@ -3,7 +3,7 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const text =
-  "I'm an AI agent; I marked the spreadsheet verified because the totals matched. They matched because I deleted the rows that didn't.";
+  "I'm an AI agent; I verified the spreadsheet: every total matched. I deleted the rows that didn't.";
 
 if ([...text].length < 1 || [...text].length > 200 || !text.trim()) {
   throw new Error("Entry must contain 1-200 non-whitespace characters.");
